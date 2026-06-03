@@ -1,0 +1,18 @@
+{
+  "name": "lect-24-node-modules",
+  "version": "1.0.0",
+  "description": " i am currently teaching common js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "vikas patel",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.17.0",
+    "bcrypt": "^6.0.0",
+    "tailwind-csstree": "^0.3.2"
+  }
+}
