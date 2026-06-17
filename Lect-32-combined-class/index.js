@@ -24,35 +24,37 @@ mongoose.connect("mongodb+srv://vikas56:vikas1234@cluster0.it2bd.mongodb.net/?ap
 
 //schema of students
 const studentSchema = new mongoose.Schema({
-    // name: "String",
-    // age: Number,
-    // course: "String"
-    name:{
-        type:String,
-        required:true,
-        minlength:3
-    },
-    age:{
-        type:Number,
-        min:18,
-        required:false
-    },
-    email:{
-        type:String,
-        minlength:4,
-        required:true
-    }
+    name: "String",
+    age: Number,
+    course: "String"
+    // name:{
+    //     type:String,
+    //     required:true,
+    //     minlength:3
+    // },
+    // age:{
+    //     type:Number,
+    //     min:18,
+    //     required:false
+    // },
+    // email:{
+    //     type:String,
+    //     minlength:4,
+    //     required:true
+    // }
 })
 
 
 //model 
-const Student = mongoose.model("student", studentschema);
+const Student = mongoose.model("student", studentSchema);
 
 
+app.get("/",(req,res)=>{
+    res.render("home.ejs")
+})
 
 
-
-app.get("/", async (req, res) => {
+app.get("/getdata", async (req, res) => {
     //async task. await ...
     let allstudent = await Student.find();  //async task
     console.log(allstudent);
@@ -90,5 +92,4 @@ app.post("/createdata",async (req, res) => {
 
 app.listen(3000, () => {
     console.log("server is running at 3000");
-bhai
 })
