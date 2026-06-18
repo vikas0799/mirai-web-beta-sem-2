@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+  <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+    text-align:center;
+    width:400px;
+}
+
+h1{
+    margin-bottom:30px;
+    color:#333;
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    background:#007bff;
+    color:white;
+    padding:14px;
+    margin:15px 0;
+    border-radius:6px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0056b3;
+    transform:scale(1.03);
+}
+  </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎓 Student Management System</h1>
+
+        <a href="http://localhost:3000/getdata" class="btn">
+            📋 All Student Data
+        </a>
+
+        <a href="http://localhost:3000/insertdata" class="btn">
+            ➕ Add Student
+        </a>
+    </div>
+
+</body>
+</html>
