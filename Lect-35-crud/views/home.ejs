@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .navbar {
+            background: #111827;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .info {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .label {
+            color: #94a3b8;
+        }
+
+        .value {
+            color: #f1f5f9;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        📊 User Dashboard
+    </div>
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="title">Profile Info</div>
+
+                <div class="info">
+                    <span class="label">Name:</span>
+                    <span class="value"><%= user[0].name %></span>
+                </div>
+
+                <div class="info">
+                    <span class="label">Age:</span>
+                    <span class="value"><%= user[0].age %></span>
+                </div>
+
+                <div class="info">
+                    <span class="label">Email:</span>
+                    <span class="value"><%= user[0].email %></span>
+                </div>
+
+                <div class="info">
+                    <span class="label">Course:</span>
+                    <span class="value"><%= user[0].course %></span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
